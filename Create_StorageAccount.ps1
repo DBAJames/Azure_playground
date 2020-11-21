@@ -12,3 +12,6 @@ New-AzResourceGroup -Name $resourceGroup -Location $location
 Get-AzLocation | select Location
 
 New-AzStorageAccount -ResourceGroupName $resourceGroup   -Name $StorageAccount -Location $location   -SkuName Standard_RAGRS   -Kind StorageV2
+
+
+Get-AzureSubscription
