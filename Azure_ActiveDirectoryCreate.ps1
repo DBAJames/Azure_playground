@@ -2,6 +2,9 @@
 #Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted
 
 
+##### Errr i couldn't get it working, so i just did it in the gui........
+# i#m sure theres an easy way of doing it. but more interesting things on the horizon away from AD
+
 #
 Install-Module AzureAD -Scope CurrentUser
 
@@ -21,3 +24,5 @@ Get-PSRepository
 
 $AzureAdCred = Get-Credential
 Connect-AzureAD -Credential $AzureAdCred
+
+

@@ -8,6 +8,6 @@ $tenantId = (Get-AzContext).Tenant.Id
 
 $tenantId
 
-
+Get-AzSubscription
 
 Get-InstalledModule -Name "Az"
