@@ -1,0 +1,23 @@
+# Lol by default the microsoft PSGallery isn't trusted.
+#Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted
+
+
+#
+Install-Module AzureAD -Scope CurrentUser
+
+Connect-AzureAD
+
+
+New-AzureADServicePrincipal -AppId "6ba9a5d4-8456-4118-b521-9c5ca10cdf84"
+
+
+Get-Module AzureAD
+
+Get-Module AzureADPreview
+
+
+Get-PSRepository
+
+
+$AzureAdCred = Get-Credential
+Connect-AzureAD -Credential $AzureAdCred
