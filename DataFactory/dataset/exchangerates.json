@@ -10,11 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": {
-					"value": "concat(\"exchangerates\",@utcnow(),\".json\")",
-					"type": "Expression"
-				},
-				"folderPath": "exchangerates",
+				"fileName": "concat(\"exchangerates\",@utcnow(),\".json\")",
 				"container": "ja-blob"
 			}
 		},
