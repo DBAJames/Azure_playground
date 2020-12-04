@@ -13,7 +13,6 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
 				"typeProperties": {
 					"url": "https://api.exchangeratesapi.io/latest",
 					"method": "GET",
