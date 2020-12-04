@@ -13,6 +13,7 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
+				"userProperties": [],
 				"typeProperties": {
 					"url": "https://api.exchangeratesapi.io/latest",
 					"method": "GET",
@@ -32,7 +33,7 @@
 			}
 		],
 		"annotations": [],
-		"lastPublishTime": "2020-12-04T01:04:12Z"
+		"lastPublishTime": "2020-12-04T01:19:12Z"
 	},
 	"type": "Microsoft.DataFactory/factories/pipelines"
 }
