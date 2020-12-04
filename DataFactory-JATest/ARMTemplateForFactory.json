@@ -38,45 +38,17 @@
 							"url": "https://api.exchangeratesapi.io/latest",
 							"method": "GET",
 							"headers": {},
-							"datasets": [
+							"linkedServices": [
 								{
-									"referenceName": "exchangerates",
-									"type": "DatasetReference",
-									"parameters": {}
+									"referenceName": "AzureBlobStorage1",
+									"type": "LinkedServiceReference"
 								}
 							]
 						}
 					}
 				],
-				"annotations": []
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/exchangerates')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/exchangerates')]",
-			"type": "Microsoft.DataFactory/factories/datasets",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"linkedServiceName": {
-					"referenceName": "AzureBlobStorage1",
-					"type": "LinkedServiceReference"
-				},
 				"annotations": [],
-				"type": "Json",
-				"typeProperties": {
-					"location": {
-						"type": "AzureBlobStorageLocation",
-						"fileName": {
-							"value": "concat(\"exchangerates\",@utcnow(),\".json\")",
-							"type": "Expression"
-						},
-						"folderPath": "exchangerates",
-						"container": "ja-blob"
-					}
-				},
-				"schema": {}
+				"lastPublishTime": "2020-12-04T01:19:12Z"
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/linkedServices/AzureBlobStorage1')]"
