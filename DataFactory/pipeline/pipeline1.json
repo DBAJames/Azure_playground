@@ -16,6 +16,12 @@
 				"typeProperties": {
 					"url": "https://api.exchangeratesapi.io/latest",
 					"method": "GET",
+					"linkedServices": [
+						{
+							"referenceName": "AzureBlobStorage1",
+							"type": "LinkedServiceReference"
+						}
+					],
 					"datasets": [
 						{
 							"referenceName": "exchangerates",
