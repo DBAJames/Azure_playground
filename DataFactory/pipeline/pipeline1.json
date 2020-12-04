@@ -22,12 +22,6 @@
 							"referenceName": "AzureBlobStorage1",
 							"type": "LinkedServiceReference"
 						}
-					],
-					"datasets": [
-						{
-							"referenceName": "exchangerates",
-							"type": "DatasetReference"
-						}
 					]
 				}
 			}
