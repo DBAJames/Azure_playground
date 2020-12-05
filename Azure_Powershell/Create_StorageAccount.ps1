@@ -6,6 +6,6 @@
 $resourceGroup = "storage-resource-group_JA"
 $location = "westeurope"
 $StorageAccount = "storageaccountja"
-New-AzResourceGroup -Name $resourceGroup -Location $location -Force
-New-AzStorageAccount -ResourceGroupName $resourceGroup  -Name $StorageAccount -Location $location   -SkuName Standard_RAGRS   -Kind StorageV2 -Force
+New-AzResourceGroup -Name $resourceGroup -Location $location 
+New-AzStorageAccount -ResourceGroupName $resourceGroup  -Name $StorageAccount -Location $location   -SkuName Standard_RAGRS   -Kind StorageV2 
 
