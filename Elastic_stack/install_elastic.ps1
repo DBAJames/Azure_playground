@@ -1,5 +1,7 @@
-# This is assuming you have already downloaded and unzipped the install files.
-# With further iterations I would curl the zip files and handle the unzipping within PS.
+#This is assuming you have already created an Elastic cluster, and downloaded and unzipped the install files.
+#With further iterations I would ideally have the elastic cluster creation contained within code. 
+#This test cluster was created within the elastic gui and deployed to my personal Azure subscription.
+#And curl the elastic agent install files to the server and handle the downloading/unzipping within PS.
 
 cd 'C:\Program Files\elastic-agent\' 
 
