@@ -1,5 +1,5 @@
 {
-	"name": "exchangerates",
+	"name": "Json1",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobStorage1",
@@ -10,15 +10,9 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": {
-					"value": "concat(\"exchangerates\",@utcnow(),\".json\")",
-					"type": "Expression"
-				},
-				"folderPath": "exchangerates",
 				"container": "ja-blob"
 			}
 		},
 		"schema": {}
-	},
-	"type": "Microsoft.DataFactory/factories/datasets"
+	}
 }

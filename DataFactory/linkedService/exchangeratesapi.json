@@ -1,0 +1,12 @@
+{
+	"name": "exchangeratesapi",
+	"properties": {
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "https://api.exchangeratesapi.io/latest",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
