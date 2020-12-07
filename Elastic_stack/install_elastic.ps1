@@ -1,7 +1,6 @@
-#This is assuming you have already created an Elastic cluster, and downloaded and unzipped the install files.
-#With further iterations I would ideally have the elastic cluster creation contained within code. 
-#This test cluster was created within the elastic gui and deployed to my personal Azure subscription.
-#And curl the elastic agent install files to the server and handle the downloading/unzipping within PS.
+#This is assuming you have already created an Elastic cluster. With further iterations I would ideally have the elastic cluster creation contained within code. 
+#This script also assumed you have downloaded and unzipped the elastic agent install files onto the target server.
+#Ideally we would get the powershell script doing a curl the elastic agent install files and handling the unzip itself.
 
 cd 'C:\Program Files\elastic-agent\' 
 
